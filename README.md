@@ -19,20 +19,6 @@ Useful to detect unexpected/unauthorised logins (counts, client IPs, TTYs, login
 
 ---
 
-## Repository layout (important files)
-
-```
-ssh-sessions-exporter/
-├─ ssh_sessions_prometheus.py     # main exporter (edit this file in repo)
-├─ install.sh                     # installer / updater (run with sudo)
-├─ prometheus_requirements.txt    # python deps: prometheus_client
-├─ ssh_sessions_exporter.service.template
-├─ README.md
-├─ .gitignore
-```
-
----
-
 ## Installation
 
 On your Raspberry Pi (assumes Debian-based OS):
@@ -40,10 +26,10 @@ On your Raspberry Pi (assumes Debian-based OS):
 ```bash
 # clone your repo
 git clone <your-repo-url>
-cd ssh-sessions-exporter
+cd prometheus-ssh-sessions-exporter
 
 # run installer as root
-sudo ./install.sh
+sudo bash install.sh
 ```
 
 What `install.sh` does:
