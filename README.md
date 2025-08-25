@@ -62,7 +62,7 @@ sudo ./install.sh update
 
 ---
 
-## Configuration (runtime)
+## Configuration
 
 The Python script reads optional environment variables (also set by the service unit):
 
@@ -74,7 +74,7 @@ The service file created by `install.sh` sets these values via `Environment=` li
 
 ---
 
-## Prometheus scrape config (example)
+## Prometheus scrape config
 
 Add a scrape job to your `prometheus.yml`:
 
@@ -91,6 +91,7 @@ After updating Prometheus config, reload or restart Prometheus.
 
 Goto Dashboard > New > Import and paste the code from `dashboard.json` to import the Dashboad.
 
-<img width="1558" height="1132" alt="SSH Sessions - Dashboards - Grafana" src="https://github.com/user-attachments/assets/74c2edc0-fe2d-4575-aa52-dedd695393d1" />
+<img width="1562" height="1134" alt="SSH Sessions - Dashboards - Grafana" src="https://github.com/user-attachments/assets/655e117b-87cd-42cf-af91-7dc2e91ad00c" />
+
 
 
