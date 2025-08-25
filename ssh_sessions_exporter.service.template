@@ -1,0 +1,18 @@
+[Unit]
+Description=SSH Sessions Prometheus Exporter
+After=network.target
+
+
+[Service]
+Type=simple
+User={{INSTALL_USER}}
+WorkingDirectory={{INSTALL_DIR}}
+Environment=PORT={{PORT}}
+Environment=POLL_INTERVAL={{POLL_INTERVAL}}
+ExecStart={{VENV_PYTHON}} {{INSTALL_DIR}}/ssh_sessions_prometheus.py
+Restart=always
+RestartSec=5
+
+
+[Install]
+WantedBy=multi-user.target
