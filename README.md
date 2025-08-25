@@ -86,3 +86,11 @@ scrape_configs:
 ```
 
 After updating Prometheus config, reload or restart Prometheus.
+
+## Grafana Dashboard
+
+Goto Dashboard > New > Import and copy the code from `dashboard.json` to import the Dashboad.
+
+<img width="1558" height="1132" alt="SSH Sessions - Dashboards - Grafana" src="https://github.com/user-attachments/assets/74c2edc0-fe2d-4575-aa52-dedd695393d1" />
+
+
