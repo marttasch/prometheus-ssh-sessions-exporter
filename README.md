@@ -25,7 +25,7 @@ On your Raspberry Pi (assumes Debian-based OS):
 
 ```bash
 # clone your repo
-git clone <your-repo-url>
+git clone https://github.com/marttasch/prometheus-ssh-sessions-exporter
 cd prometheus-ssh-sessions-exporter
 
 # run installer as root
